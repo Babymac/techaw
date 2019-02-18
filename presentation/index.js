@@ -105,11 +105,14 @@ export default class Presentation extends React.Component {
             Theres more then one?......yes
           </Heading>
           <List>
-            <ListItem>Jquery</ListItem>
+            <ListItem>JQuery</ListItem>
             <ListItem>AngularJS</ListItem>
             <ListItem>React</ListItem>
             <ListItem>Angular 2-7</ListItem>
           </List>
+          <Text style={{ marginTop: 20, marginBottom: 20 }}>
+            No, this is not all of them...
+          </Text>
         </Slide>
 
 {/*        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
@@ -119,9 +122,10 @@ export default class Presentation extends React.Component {
           </BlockQuote>
         </Slide>*/}
 
+{/*JQUERY*/}
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={6} textColor="tertiary" caps>
-            Jquery
+            JQuery
           </Heading>
           <CodePane
             style={{ fontSize: 20, paddingLeft: 100, paddingRight: 100 }}
@@ -137,6 +141,79 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
 
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={6} textColor="tertiary" caps>
+            What can it do?
+          </Heading>
+          <List>
+            <ListItem>HTML/DOM manipulation</ListItem>
+            <ListItem>CSS manipulation</ListItem>
+            <ListItem>HTML event methods</ListItem>
+            <ListItem>Effects and animations</ListItem>
+            <ListItem>AJAX</ListItem>
+            <ListItem>Plugins <small>for almost any task out there "ish"</small></ListItem>
+          </List>
+        </Slide>
+
+{/*ANGULARJS*/}
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={6} textColor="tertiary" caps>
+            AngularJS
+          </Heading>
+          <CodePane
+            style={{ fontSize: 17, paddingLeft: 100, paddingRight: 100 }}
+            lang="jsx"
+            source={`//===JS FILE===
+var app = angular.module("app", []);
+app.controller("HelloController", function($scope) {
+  $scope.message = "Hello, AngularJS";  
+});
+
+//===HTML FILE===
+<body ng-app="app">
+  <div ng-controller="HelloController">
+    <h2>{{message}}</h2>
+  </div>
+</body>`}
+          />
+          <Text style={{ marginTop: 20, marginBottom: 20 }}>
+            <Image src={"https://i.gifer.com/OjDL.gif"} />
+          </Text>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={6} textColor="tertiary" caps>
+            AWESOME!! Right? Come on? Plz!
+          </Heading>
+          <List>
+            <ListItem>Awesome! <small>(then, not today)</small></ListItem>
+            <ListItem>SPA</ListItem>
+            <ListItem>Two-way data</ListItem>
+            <ListItem>Faster development</ListItem>
+            <ListItem>Easy learning</ListItem>
+            <ListItem>MVC <small>(Model, View and Controller)</small></ListItem>
+            <ListItem>Developed by Google</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={6} textColor="tertiary" caps>
+            Flawless right?? Nope!
+          </Heading>
+          <List>
+            <ListItem>Poor documentation</ListItem>
+            <ListItem>Two-way data</ListItem>
+            <ListItem>Logic in HTML = Problems</ListItem>
+            <ListItem>AngularJS works directly with DOM</ListItem>
+            <ListItem>Not that easy learning after all</ListItem>
+            <ListItem>Scales poorly</ListItem>
+          </List>
+          <Text style={{ marginTop: 20, marginBottom: 20 }}>
+            <Image src={"https://media.giphy.com/media/Wf8lxu79Yv5za/giphy.gif"} />
+          </Text>
+        </Slide>
+
+{/*REACT*/}
         <Slide transition={["zoom"]}>
           <Image src={images.jssanta.replace("/", "")} />
         </Slide>

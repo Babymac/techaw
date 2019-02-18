@@ -1,0 +1,48 @@
+1. Intro
+
+2. Me
+(personal presentation, much have happened in 1 year, some new faces and some that quit *cough(Eelke)*cough
+
+2.1 690/85
+
+2.2 SMC
+
+3. Frameworks
+
+4. Jquery
+	jQuery is a lightweight, "write less, do more", JavaScript library.
+
+	The purpose of jQuery is to make it much easier to use JavaScript on your website.
+
+	jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+
+	jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+
+5. Angular.js
+	
+S	Singel page applications
+
+S	Two-way data binding - To put it simply, any changes in the user interface are accessible to the controller and,
+	vice versa, any alteration of the controller or the model itself will be displayed in the user interface.
+	
+S	MVC - Thanks to various services and controllers employed in AngularJS, developers can divide an app into integral parts.
+
+W	Two-way data binding appeared to be an imperfect solution. Overusing this feature resulted in the slow work of applications.
+
+W	Given that the logic of a project is in its HTML markup, the development and maintenance are rather problematic.
+
+W	AngularJS works directly with DOM and not with Virtual DOM. Which we see later is a better approach.
+
+W	It's kind of big! Like really big!
+
+W	scale poorly - bigger it gets, the harder it is to maintain. Rewrite etc.
+
+6. React.js
+
+7. Angular 2-7
+
+8. pros, cons
+
+9. misc
+
+10. conclusion (it's all just javascript - Yes Henrik, we know its C in the end...bla...bla...bla)
