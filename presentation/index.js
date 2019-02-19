@@ -37,6 +37,7 @@ const images = {
   aww: require("../assets/aww.jpg"),
   vue: require("../assets/vue.jpg"),
   opps: require("../assets/opps.jpg"),
+  techafterwork: require("../assets/techafterwork.png"),
 };
 
 preloader(images);
@@ -61,6 +62,10 @@ export default class Presentation extends React.Component {
         transitionDuration={500}
         theme={theme}
       >
+
+        <Slide transition={["zoom"]} bgColor="tertiary">
+          <Image src={images.techafterwork.replace("/", "")} />
+        </Slide>
 
         <Slide transition={["zoom"]} bgColor="tertiary">
           <Image src={images.framework.replace("/", "")} />
