@@ -39,7 +39,29 @@ W	scale poorly - bigger it gets, the harder it is to maintain. Rewrite etc.
 
 6. React.js
 
+S	Virtual DOM, is a js copy of the actual HTML DOM, and this lets you update the real DOM more precise and easier. Performance increase. Never work with the real DOM, react does that for you. So DOM manipulations are always working well.
+
+W	Wrapper hell, since react passes properties downwards from parent to child we get what is know as the wrapper hell. Nested components
+
+W	Since react dont have all the tools that angular comes with, it leaves it to the developers to decide what tools to use, ajax and so on. Same time a strenght.
+
 7. Angular 2-7
+
+S	TypeScript, a javascript subset, microsoft, strongly typed language, safety, goes out side of the "normal" javascript world (bad for me)
+
+S	Angular CLI is a command line interface for kick-starting new projects, adding files, and performing tasks within the build-deploy-test workflow. It can create classes for you and does a lot of the extra work for you.
+
+S	Material, an easy component library with everyday use components. menu, checkboxes, dropdowns, imagesliders etc etc
+
+S	1-2-way data, keeps the angularjs approach but also introduce the one way like react.
+
+S	RxJS is a library for reactive programming. It generates data flows between components and allows creating new ones needed in a particular situation.
+
+W	TypeScript, kind of a new language, can be tedious. Takes time to learn.
+
+W	Documentation still suffers a bit, and leaves you asking for more sometimes
+
+W	It's kind of big, it contains most of the stuff you want and don't want. No cherry picking.
 
 8. pros, cons
 
