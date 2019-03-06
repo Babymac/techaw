@@ -38,6 +38,7 @@ const images = {
   vue: require("../assets/vue.jpg"),
   opps: require("../assets/opps.jpg"),
   techafterwork: require("../assets/techafterwork.png"),
+  modern: require("../assets/modern.gif")
 };
 
 preloader(images);
@@ -131,8 +132,8 @@ export default class Presentation extends React.Component {
         </Slide>
 
 {/*JQUERY*/}
-        <Slide transition={["fade"]} bgColor="primary">
-          <Heading size={6} textColor="tertiary" caps>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={6} textColor="primary" caps>
             JQuery
           </Heading>
           <CodePane
@@ -144,9 +145,6 @@ export default class Presentation extends React.Component {
 <div id="msgid">
 </div>`}
           />
-          <Text style={{ marginTop: 20, marginBottom: 20 }}>
-            
-          </Text>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="primary">
@@ -164,8 +162,8 @@ export default class Presentation extends React.Component {
         </Slide>
 
 {/*ANGULARJS*/}
-        <Slide transition={["fade"]} bgColor="primary">
-          <Heading size={6} textColor="tertiary" caps>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={6} textColor="primary" caps>
             AngularJS
           </Heading>
           <CodePane
@@ -222,8 +220,8 @@ app.controller("HelloController", function($scope) {
         </Slide>
 
 {/*REACT*/}
-        <Slide transition={["fade"]} bgColor="primary">
-          <Heading size={6} textColor="tertiary" caps>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={6} textColor="primary" caps>
             React
           </Heading>
           <CodePane
@@ -232,7 +230,8 @@ app.controller("HelloController", function($scope) {
             source={`ReactDOM.render(
   <h1>Hello, world!</h1>,
   document.getElementById('root')
-);`}
+);
+<div id="root"></div>`}
           />
           <Text style={{ marginTop: 20, marginBottom: 20 }}>
             <Image src={"https://media.giphy.com/media/9WXyFIDv2PyBq/giphy.gif"} />
@@ -252,7 +251,7 @@ app.controller("HelloController", function($scope) {
             <ListItem>Redux</ListItem>
             <ListItem>React/Redux DevTools</ListItem>
             <ListItem>Easy to learn <small>(Fo real bro!)</small></ListItem>
-            <ListItem>11 Api functions <small>(It's tiny)</small></ListItem>
+            <ListItem>11 Api functions <small>(It's tiny, just like yours :) )</small></ListItem>
             <ListItem>I could go on but i'm not paid by the hour...</ListItem>
           </List>
           <Image src={images.aww.replace("/","")} />
@@ -282,13 +281,13 @@ app.controller("HelloController", function($scope) {
           </Text>
         </Slide>
 
-        <Slide transition={["zoom"]}>
+        <Slide transition={["zoom"]} bgColor="tertiary">
           <Image src={images.meme.replace("/", "")} />
         </Slide>
 
 {/*ANGULAR2/7*/}
-        <Slide transition={["fade"]} bgColor="primary">
-          <Heading size={6} textColor="tertiary" caps>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={6} textColor="primary" caps>
             Angular 2-7<small> (But not 3)</small>
           </Heading>
           <CodePane
